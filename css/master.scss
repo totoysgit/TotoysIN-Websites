@@ -321,10 +321,10 @@ body {
 
         a {
             padding: 0;
-            font-family: Graphik;
-            font-size: 14px;
-            font-weight: 400;
+            font-family: 'Poppins';
             font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
             line-height: 1.71;
             letter-spacing: normal;
             color: #222;
@@ -334,6 +334,7 @@ body {
 
             img {
                 box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+                width: 120px;
             }
 
             &:hover {
@@ -342,6 +343,11 @@ body {
                 img {
                     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.07);
                 }
+            }
+        }
+        &.active{
+            a{
+                color: #FF5F00;
             }
         }
     }
@@ -549,6 +555,106 @@ body {
         .content-holder {
             .button {
                 margin-top: 30px;
+            }
+        }
+    }
+
+    &.about-us {
+        .image-content-holder {
+            .image-holder {
+                width: 520px;
+            }
+
+            &>.content-holder {
+                width: calc(100% - 520px);
+            }
+
+            .subscription-content {
+                .content-holder {
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.blog {
+        .blog-card {
+            background-color: #f6f4fe;
+            border-radius: 10px;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+            margin-bottom: 37px;
+
+            .image-holder {
+                height: 245px;
+                position: relative;
+                border-radius: 12px;
+                background-color: #e4e4e4;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .content-holder {
+                padding: 20px 30px;
+
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                }
+
+                a.read-more {
+                    font-size: 14px;
+                }
+
+            }
+        }
+
+        .blog-details {
+            background-color: #f9f9f9;
+            padding: 50px 100px;
+            border-radius: 20px;
+
+            .blog-title {
+                h4 {
+                    font-size: 22px;
+                    margin-bottom: 15px;
+                    font-weight: 400;
+                }
+            }
+
+            .image-holder {
+                margin-bottom: 20px;
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+
+            .content-holder {
+                p {
+                    font-size: 14px;
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                }
+
             }
         }
     }
@@ -779,6 +885,48 @@ footer {
                 position: absolute;
                 right: 10px;
                 bottom: 15px;
+            }
+        }
+    }
+
+    .map-holder {
+        .contact-map {
+            iframe {
+                height: 300px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.contact-address-holder {
+    .title-description {
+        p {
+            margin-bottom: 30px;
+        }
+
+        .contact-address {
+            margin-bottom: 30px;
+        }
+
+        .contact-address {
+            h6 {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                opacity: .5;
+            }
+
+            h5 {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 200;
+                font-size: 18px;
+                line-height: 32px;
+                letter-spacing: 0.5px;
+                margin-bottom: 16px;
             }
         }
     }
