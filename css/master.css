@@ -131,6 +131,7 @@ ul {
 
 body {
   background-color: #fff;
+  padding-top: 88px;
 }
 
 .p-b-0 {
@@ -188,6 +189,19 @@ body {
 .navbar-brand {
   padding: 0;
   height: auto;
+}
+.navbar-brand .icon img {
+  width: 100px;
+}
+
+header {
+  margin: 0 !important;
+  padding: 25px 0;
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {
@@ -284,6 +298,9 @@ body {
   opacity: 0;
 }
 
+.navbar-right {
+  margin-right: 0;
+}
 .navbar-right li {
   margin-right: 20px;
   float: none;
@@ -298,7 +315,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 37px;
   letter-spacing: normal;
   color: #222;
   position: relative;
