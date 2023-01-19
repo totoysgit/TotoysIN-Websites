@@ -132,6 +132,7 @@ ul {
 body {
   background-color: #fff;
   padding-top: 88px;
+  font-family: Poppins;
 }
 
 .p-b-0 {
@@ -527,6 +528,7 @@ header {
 }
 .subscription-holder.blog .blog-card .content-holder {
   padding: 20px 30px;
+  height: 222px;
 }
 .subscription-holder.blog .blog-card .content-holder h4 {
   font-size: 18px;
@@ -562,6 +564,20 @@ header {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 20px;
+}
+.subscription-holder.blog .blog-details .content-holder ul {
+  list-style: decimal;
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+.subscription-holder.blog .blog-details .content-holder ul li {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+.subscription-holder.blog .blog-details .content-holder ul li:last-child {
+  margin-bottom: 0;
 }
 
 .faq-holder {
