@@ -433,6 +433,9 @@ header {
 .services-holder .image-content-holder .service-content {
   position: relative;
 }
+.services-holder .image-content-holder .image-holder, .services-holder .image-content-holder .content-holder {
+  padding: 0 10px;
+}
 
 .shop-by-age {
   background-image: url("../images/gradient-bg.png");
@@ -491,6 +494,9 @@ header {
   align-items: center;
 }
 .subscription-holder .image-content-holder .image-holder img {
+  width: 100%;
+}
+.subscription-holder .subscription-content {
   width: 100%;
 }
 .subscription-holder .subscription-content .content-holder .button {
