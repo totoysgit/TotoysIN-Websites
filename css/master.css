@@ -5,32 +5,32 @@
 @font-face {
   font-family: Poppins;
   font-weight: 100;
-  src: url("../fonts/poppins/Poppins-Thin.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-Thin.otf') format('opentype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 200;
-  src: url("../fonts/poppins/Poppins-Light.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-Light.otf') format('opentype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 300;
-  src: url("../fonts/poppins/Poppins-Regular.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 400;
-  src: url("../fonts/poppins/Poppins-Medium.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 500;
-  src: url("../fonts/poppins/Poppins-SemiBold.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-SemiBold.otf') format('opentype');
 }
 @font-face {
   font-family: Poppins;
   font-weight: 600;
-  src: url("../fonts/poppins/Poppins-Bold.otf") format("opentype");
+  src: url('../fonts/poppins/Poppins-Bold.otf') format('opentype');
 }
 .container-medium {
   max-width: 1206px;
@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 767px) {
   .container-medium {
-    padding: 0 35px;
+    padding: 0 15px;
   }
 }
 
@@ -164,27 +164,27 @@ body {
 }
 
 .orange {
-  color: #FF5F00;
+  color: #ff5f00;
 }
 
 .blue {
-  color: #141AA6;
+  color: #141aa6;
 }
 
 .green-light {
-  color: #00D275;
+  color: #00d275;
 }
 
 .purple {
-  color: #C400AD;
+  color: #c400ad;
 }
 
 .indego {
-  color: #00B7E5;
+  color: #00b7e5;
 }
 
 .green {
-  color: #00B25F;
+  color: #00b25f;
 }
 
 .navbar-brand {
@@ -210,7 +210,7 @@ header {
     float: left;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   nav {
     float: right;
   }
@@ -237,7 +237,7 @@ header {
   padding: 15px 25px;
   font-size: 14px;
   display: inline-block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
@@ -259,7 +259,7 @@ header {
 }
 
 .button-primary {
-  background-color: #FF5F00;
+  background-color: #ff5f00;
   border-radius: 10px;
   color: #fff !important;
 }
@@ -288,6 +288,9 @@ header {
 .menu-btn-holder .icon-bar.three {
   margin-top: 10px;
 }
+.menu-btn-holder.menu-close {
+  padding-top: 14px;
+}
 .menu-btn-holder.menu-close .one {
   transform: rotate(45deg);
 }
@@ -297,6 +300,10 @@ header {
 }
 .menu-btn-holder.menu-close .three {
   opacity: 0;
+}
+
+.menu-btn-holder {
+  display: none;
 }
 
 .navbar-right {
@@ -312,7 +319,7 @@ header {
 }
 .navbar-right li a {
   padding: 0;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -334,11 +341,11 @@ header {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.07);
 }
 .navbar-right li.active a {
-  color: #FF5F00;
+  color: #ff5f00;
 }
 
 .main-banner {
-  margin-top: 155px;
+  margin-top: 115px;
   position: relative;
 }
 .main-banner .content-holder h1 span {
@@ -360,7 +367,7 @@ header {
 }
 
 .content-holder h1 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 56px;
@@ -368,7 +375,7 @@ header {
   margin-bottom: 27px;
 }
 .content-holder h4 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -377,7 +384,7 @@ header {
   margin-bottom: 16px;
 }
 .content-holder p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 16px;
@@ -386,7 +393,12 @@ header {
 }
 
 .who-we-are {
-  background: linear-gradient(285.48deg, #251D67 1.27%, #2E347F 21.31%, #5090DD 101.44%);
+  background: linear-gradient(
+    285.48deg,
+    #251d67 1.27%,
+    #2e347f 21.31%,
+    #5090dd 101.44%
+  );
   border-radius: 30px;
   padding: 65px;
 }
@@ -401,7 +413,7 @@ header {
   margin-top: 30px;
 }
 .who-we-are .featured-in h4 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -414,12 +426,12 @@ header {
   margin-bottom: 16px;
 }
 .title-holder h3 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 56px;
-  color: #04121F;
+  color: #04121f;
 }
 
 .services-holder .title-description {
@@ -433,12 +445,13 @@ header {
 .services-holder .image-content-holder .service-content {
   position: relative;
 }
-.services-holder .image-content-holder .image-holder, .services-holder .image-content-holder .content-holder {
+.services-holder .image-content-holder .image-holder,
+.services-holder .image-content-holder .content-holder {
   padding: 0 10px;
 }
 
 .shop-by-age {
-  background-image: url("../images/gradient-bg.png");
+  background-image: url('../images/gradient-bg.png');
   background-size: cover;
   border-radius: 30px;
   padding: 65px;
@@ -469,24 +482,24 @@ header {
 }
 .shop-by-age .button-holder a .content .main-content {
   display: block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin-bottom: 8px;
-  color: #222E39;
+  color: #222e39;
 }
 .shop-by-age .button-holder a .content .sub-content {
   display: block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.5px;
-  color: #222E39;
+  color: #222e39;
 }
 
 .subscription-holder .image-content-holder {
@@ -502,13 +515,17 @@ header {
 .subscription-holder .subscription-content .content-holder .button {
   margin-top: 30px;
 }
-.subscription-holder.about-us .image-content-holder .image-holder {
+/* .subscription-holder.about-us .image-content-holder .image-holder {
   width: 520px;
-}
-.subscription-holder.about-us .image-content-holder > .content-holder {
+} */
+/* .subscription-holder.about-us .image-content-holder > .content-holder {
   width: calc(100% - 520px);
-}
-.subscription-holder.about-us .image-content-holder .subscription-content .content-holder p {
+} */
+.subscription-holder.about-us
+  .image-content-holder
+  .subscription-content
+  .content-holder
+  p {
   margin-bottom: 20px;
 }
 .subscription-holder.blog .blog-card {
@@ -614,19 +631,19 @@ header {
   display: block;
   position: relative;
   padding-left: 38px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.5px;
-  color: #04121F;
+  color: #04121f;
 }
 .faq-holder .panel-heading .panel-title a::before {
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
-  background-image: url("../images/arrow-accordian.png");
+  background-image: url('../images/arrow-accordian.png');
   background-size: cover;
   position: absolute;
   left: 0;
@@ -648,13 +665,13 @@ header {
   padding: 0;
   padding-left: 38px;
   padding-top: 16px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 32px;
   letter-spacing: 0.5px;
-  color: #04121F;
+  color: #04121f;
 }
 
 footer {
@@ -667,7 +684,7 @@ footer .footer-content {
   padding: 20px 0;
 }
 footer .content-left p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 12px;
@@ -683,7 +700,7 @@ footer .content-right ul li:last-child {
 }
 footer .content-right ul li a {
   display: block;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 12px;
@@ -702,7 +719,7 @@ footer .content-right ul li.social-media a {
   max-width: 600px;
 }
 .title-description p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 16px;
@@ -728,7 +745,7 @@ footer .content-right ul li.social-media a {
 }
 .contact-us .form-holder .form-group .form-control {
   box-shadow: none;
-  border: 1px solid #939BA3;
+  border: 1px solid #939ba3;
   border-radius: 4px;
   height: 48px;
 }
@@ -740,7 +757,7 @@ footer .content-right ul li.social-media a {
   margin-bottom: 0;
 }
 .contact-us .form-holder .form-group label {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -755,7 +772,7 @@ footer .content-right ul li.social-media a {
   width: 100%;
   color: white;
   height: 80px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -778,7 +795,7 @@ footer .content-right ul li.social-media a {
   margin-bottom: 30px;
 }
 .contact-address-holder .title-description .contact-address h6 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -786,7 +803,7 @@ footer .content-right ul li.social-media a {
   opacity: 0.5;
 }
 .contact-address-holder .title-description .contact-address h5 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-size: 18px;
@@ -803,3 +820,588 @@ footer .content-right ul li.social-media a {
 }
 
 /*# sourceMappingURL=master.css.map */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 991px) {
+  .image-holder {
+    min-width: 45%;
+  }
+  .container-medium {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-banner {
+    margin-top: 0;
+  }
+
+  .main-banner .content-holder {
+    padding-right: 0;
+  }
+
+  .main-banner .content-holder h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .main-banner .content-holder p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 0;
+  }
+
+  .main-banner .content-holder .button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-banner .banner-image {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .main-banner .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .subscription-holder.blog .blog-details {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+}
+
+/* Responsive styles - Tablet (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-medium {
+    padding: 0 20px;
+  }
+
+  body {
+    padding-top: 70px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .navbar {
+    margin-top: 40px;
+  }
+
+  .navbar-brand .icon img {
+    width: 80px;
+  }
+
+  .navbar-right li {
+    margin-right: 15px;
+  }
+
+  .navbar-right li a {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .main-banner {
+    margin-top: 80px;
+  }
+
+
+  .main-banner .content-holder h1 {
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .main-banner .content-holder p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 50px;
+  }
+
+  .main-banner .content-holder .button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .main-banner .banner-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .who-we-are {
+    padding: 40px;
+  }
+
+  .who-we-are .content-holder p {
+    max-width: 100%;
+  }
+
+  .title-holder h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .title-description p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .services-holder .image-content-holder {
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .services-holder .image-content-holder .image-holder,
+  .services-holder .image-content-holder .content-holder {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+  }
+
+  .services-holder .image-content-holder .content-holder p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .content-holder h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .content-holder p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .shop-by-age {
+    padding: 40px;
+  }
+
+  .shop-by-age .button-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-by-age .button-holder a {
+    min-width: 280px;
+    margin: 10px;
+  }
+
+  .subscription-holder .image-content-holder {
+    flex-wrap: wrap;
+  }
+
+  .subscription-holder .image-content-holder .content-holder,
+  .subscription-holder .image-content-holder .image-holder {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .subscription-holder .image-content-holder .image-holder {
+    margin-bottom: 20px;
+  }
+
+  .subscription-holder.about-us .image-content-holder .image-holder {
+    width: 100%;
+  }
+
+  .subscription-holder.about-us .image-content-holder > .content-holder {
+    width: 100%;
+  }
+
+  .faq-holder .panel-heading .panel-title a {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 30px;
+  }
+
+  .faq-holder .panel-heading .panel-title a::before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+  }
+
+  .faq-holder .panel-body {
+    padding-left: 30px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .contact-us .row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .contact-us .row .col-md-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-us .form-holder .form-group .button-holder button {
+    padding: 20px 30px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  footer .footer-content {
+    padding: 15px 0;
+  }
+
+  footer .content-left p,
+  footer .content-right ul li a {
+    font-size: 11px;
+  }
+}
+
+/* Responsive styles - Mobile and Tablet menu (max 991px) */
+@media screen and (max-width: 991px) {
+  .nav.navbar-nav.navbar-right.store-link.menu > li:not(:last-child) {
+    display: none;
+  }
+
+  .nav.navbar-nav.navbar-right.store-link.menu.menu-in > li {
+    display: block;
+  }
+
+  .nav.navbar-nav.navbar-right.store-link.menu.menu-in {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.navbar-nav.navbar-right.store-link.menu.menu-in > li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav.navbar-nav.navbar-right.store-link.menu > li:last-child {
+    display: inline-block;
+  }
+
+  .menu-btn-holder {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Responsive styles - Mobile (<768px) */
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .navbar-brand .icon img {
+    width: 70px;
+  }
+
+
+  .navbar-right li:last-child {
+    display: block !important;
+  }
+
+  .nav.navbar-nav {
+    padding: 5px;
+  }
+
+  .nav.navbar-nav.menu-in {
+    display: block;
+  }
+
+  .navbar-right li {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar-right li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .common-section {
+    padding: 30px 0;
+  }
+
+  .who-we-are {
+    padding: 30px;
+  }
+
+  .who-we-are .title-holder h3 {
+    font-size: 24px;
+  }
+
+  .who-we-are .content-holder p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .who-we-are .featured-in {
+    margin-top: 20px;
+  }
+
+  .who-we-are .featured-in h4 {
+    font-size: 18px;
+  }
+
+  .title-holder {
+    margin-bottom: 10px;
+  }
+
+  .title-holder h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .title-description {
+    max-width: 100%;
+  }
+
+  .title-description p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .services-holder .title-description {
+    max-width: 100%;
+  }
+
+  .services-holder .image-content-holder {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .services-holder .image-content-holder .content-holder {
+    order: 1;
+  }
+
+  .services-holder .image-content-holder .image-holder {
+    order: 2;
+  }
+
+  .services-holder .image-content-holder .image-holder,
+  .services-holder .image-content-holder .content-holder {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-holder .image-content-holder .image-holder img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-holder h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .content-holder p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .shop-by-age {
+    padding: 30px;
+  }
+
+  .shop-by-age .title-holder h3 {
+    font-size: 24px;
+  }
+
+  .shop-by-age .button-holder {
+    flex-direction: column;
+  }
+
+  .shop-by-age .button-holder a {
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+  }
+
+  .shop-by-age .button-holder a .content .main-content {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .shop-by-age .button-holder a .content .sub-content {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .subscription-holder .image-content-holder {
+    flex-direction: column;
+  }
+
+  .subscription-holder .image-content-holder .content-holder {
+    order: 1;
+  }
+
+  .subscription-holder .image-content-holder .image-holder {
+    order: 2;
+  }
+
+  .subscription-holder .image-content-holder .content-holder,
+  .subscription-holder .image-content-holder .image-holder {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscription-holder .image-content-holder .image-holder img {
+    width: 100%;
+    height: auto;
+  }
+
+  .subscription-holder .subscription-content .title-holder h3 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .subscription-holder .subscription-content .content-holder p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .faq-holder .panel-heading .panel-title a {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 30px;
+  }
+
+  .faq-holder .panel-heading .panel-title a::before {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+  }
+
+  .faq-holder .panel-body {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .contact-us .title-holder h3 {
+    font-size: 24px;
+  }
+
+  .contact-us .title-description p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .contact-us .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .contact-us .row .col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-us .form-holder {
+    margin-top: 20px;
+  }
+
+  .contact-us .form-holder .form-group {
+    margin-bottom: 15px;
+  }
+
+  .contact-us .form-holder .form-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .contact-us .form-holder .form-group .form-control {
+    height: 40px;
+  }
+
+  .contact-us .form-holder .form-group textarea.form-control {
+    height: 120px;
+  }
+
+  .contact-us .form-holder .form-group .button-holder button {
+    padding: 15px 20px;
+    height: 50px;
+    font-size: 13px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  footer .content-left {
+    margin-bottom: 10px;
+  }
+
+  footer .content-left p {
+    font-size: 11px;
+  }
+
+  footer .content-right ul li {
+    border-right: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  footer .content-right ul li a {
+    padding: 5px 0;
+    font-size: 11px;
+  }
+
+  footer .content-right ul li.social-media a {
+    padding: 0 5px;
+  }
+}
+
+/* Hide menu button on desktop */
+@media screen and (min-width: 992px) {
+  .nav.navbar-nav.navbar-right.store-link.menu > li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .shop-by-age .button-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-by-age .button-holder a {
+    margin: 10px;
+  }
+}
